@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id="@+id/txt_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:text="@string/result_init"
+        android:textSize="@dimen/text_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rowCount="4"
+        app:columnCount="4"
+        app:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num7"
+            />
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num8"/>
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num9"/>
+
+
+        <TextView
+            style="@style/AppTheme.BotonOperacion"
+            android:text="@string/opeC"/>
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num4"
+            />
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num5"/>
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num6"/>
+
+
+        <TextView
+            style="@style/AppTheme.BotonOperacion"
+            android:text="@string/opeSuma"/>
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num1"
+
+            />
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num2"/>
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num3"/>
+
+
+        <TextView
+            style="@style/AppTheme.BotonOperacion"
+            android:text="@string/opeResta"/>
+
+        <TextView
+            style="@style/AppTheme.Botones"
+            android:text="@string/num0"
+            />
+
+        <TextView
+            style="@style/AppTheme.BotonOperacion"
+            android:text="@string/opeIgual"
+            app:layout_columnSpan="3"
+            />
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
