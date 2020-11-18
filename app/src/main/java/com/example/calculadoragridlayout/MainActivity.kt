@@ -66,6 +66,7 @@ class MainActivity : AppCompatActivity() {
             }
             "="->{
                 suma = false
+
                 resta = false
                 numAnterior = 0
             }
