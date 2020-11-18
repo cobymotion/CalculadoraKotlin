@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
             }
             "-"->{
                 suma = false
+
                 resta = true
                 numAnterior = txtResult.text.toString().toInt()
             }
